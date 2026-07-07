@@ -28,25 +28,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC2CC7BE2EA11561002AD334 /* Challenge2Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge2Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2CC7CB2EA11563002AD334 /* Challenge2LearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challenge2LearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2CC7D52EA11563002AD334 /* Challenge2LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challenge2LearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2CC7BE2EA11561002AD334 /* LearningJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2CC7CB2EA11563002AD334 /* LearningJourneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningJourneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2CC7D52EA11563002AD334 /* LearningJourneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningJourneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EC2CC7C02EA11561002AD334 /* Challenge2Learning */ = {
+		EC2CC7C02EA11561002AD334 /* LearningJourney */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Challenge2Learning;
+			path = LearningJourney;
 			sourceTree = "<group>";
 		};
-		EC2CC7CE2EA11563002AD334 /* Challenge2LearningTests */ = {
+		EC2CC7CE2EA11563002AD334 /* LearningJourneyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Challenge2LearningTests;
+			path = LearningJourneyTests;
 			sourceTree = "<group>";
 		};
-		EC2CC7D82EA11563002AD334 /* Challenge2LearningUITests */ = {
+		EC2CC7D82EA11563002AD334 /* LearningJourneyUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Challenge2LearningUITests;
+			path = LearningJourneyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -80,9 +80,9 @@
 		EC2CC7B52EA11561002AD334 = {
 			isa = PBXGroup;
 			children = (
-				EC2CC7C02EA11561002AD334 /* Challenge2Learning */,
-				EC2CC7CE2EA11563002AD334 /* Challenge2LearningTests */,
-				EC2CC7D82EA11563002AD334 /* Challenge2LearningUITests */,
+				EC2CC7C02EA11561002AD334 /* LearningJourney */,
+				EC2CC7CE2EA11563002AD334 /* LearningJourneyTests */,
+				EC2CC7D82EA11563002AD334 /* LearningJourneyUITests */,
 				EC2CC7BF2EA11561002AD334 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,9 +90,9 @@
 		EC2CC7BF2EA11561002AD334 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC2CC7BE2EA11561002AD334 /* Challenge2Learning.app */,
-				EC2CC7CB2EA11563002AD334 /* Challenge2LearningTests.xctest */,
-				EC2CC7D52EA11563002AD334 /* Challenge2LearningUITests.xctest */,
+				EC2CC7BE2EA11561002AD334 /* LearningJourney.app */,
+				EC2CC7CB2EA11563002AD334 /* LearningJourneyTests.xctest */,
+				EC2CC7D52EA11563002AD334 /* LearningJourneyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC2CC7BD2EA11561002AD334 /* Challenge2Learning */ = {
+		EC2CC7BD2EA11561002AD334 /* LearningJourney */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC2CC7DF2EA11563002AD334 /* Build configuration list for PBXNativeTarget "Challenge2Learning" */;
+			buildConfigurationList = EC2CC7DF2EA11563002AD334 /* Build configuration list for PBXNativeTarget "LearningJourney" */;
 			buildPhases = (
 				EC2CC7BA2EA11561002AD334 /* Sources */,
 				EC2CC7BB2EA11561002AD334 /* Frameworks */,
@@ -113,19 +113,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EC2CC7C02EA11561002AD334 /* Challenge2Learning */,
+				EC2CC7C02EA11561002AD334 /* LearningJourney */,
 			);
-			name = Challenge2Learning;
+			name = LearningJourney;
 			packageProductDependencies = (
 				EC2CC7FC2EA2923D002AD334 /* FSCalendar */,
 			);
 			productName = Challenge2Learning;
-			productReference = EC2CC7BE2EA11561002AD334 /* Challenge2Learning.app */;
+			productReference = EC2CC7BE2EA11561002AD334 /* LearningJourney.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC2CC7CA2EA11563002AD334 /* Challenge2LearningTests */ = {
+		EC2CC7CA2EA11563002AD334 /* LearningJourneyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC2CC7E22EA11563002AD334 /* Build configuration list for PBXNativeTarget "Challenge2LearningTests" */;
+			buildConfigurationList = EC2CC7E22EA11563002AD334 /* Build configuration list for PBXNativeTarget "LearningJourneyTests" */;
 			buildPhases = (
 				EC2CC7C72EA11563002AD334 /* Sources */,
 				EC2CC7C82EA11563002AD334 /* Frameworks */,
@@ -137,18 +137,18 @@
 				EC2CC7CD2EA11563002AD334 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				EC2CC7CE2EA11563002AD334 /* Challenge2LearningTests */,
+				EC2CC7CE2EA11563002AD334 /* LearningJourneyTests */,
 			);
-			name = Challenge2LearningTests;
+			name = LearningJourneyTests;
 			packageProductDependencies = (
 			);
 			productName = Challenge2LearningTests;
-			productReference = EC2CC7CB2EA11563002AD334 /* Challenge2LearningTests.xctest */;
+			productReference = EC2CC7CB2EA11563002AD334 /* LearningJourneyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC2CC7D42EA11563002AD334 /* Challenge2LearningUITests */ = {
+		EC2CC7D42EA11563002AD334 /* LearningJourneyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC2CC7E52EA11563002AD334 /* Build configuration list for PBXNativeTarget "Challenge2LearningUITests" */;
+			buildConfigurationList = EC2CC7E52EA11563002AD334 /* Build configuration list for PBXNativeTarget "LearningJourneyUITests" */;
 			buildPhases = (
 				EC2CC7D12EA11563002AD334 /* Sources */,
 				EC2CC7D22EA11563002AD334 /* Frameworks */,
@@ -160,13 +160,13 @@
 				EC2CC7D72EA11563002AD334 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				EC2CC7D82EA11563002AD334 /* Challenge2LearningUITests */,
+				EC2CC7D82EA11563002AD334 /* LearningJourneyUITests */,
 			);
-			name = Challenge2LearningUITests;
+			name = LearningJourneyUITests;
 			packageProductDependencies = (
 			);
 			productName = Challenge2LearningUITests;
-			productReference = EC2CC7D52EA11563002AD334 /* Challenge2LearningUITests.xctest */;
+			productReference = EC2CC7D52EA11563002AD334 /* LearningJourneyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC2CC7B92EA11561002AD334 /* Build configuration list for PBXProject "Challenge2Learning" */;
+			buildConfigurationList = EC2CC7B92EA11561002AD334 /* Build configuration list for PBXProject "LearningJourney" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -209,9 +209,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC2CC7BD2EA11561002AD334 /* Challenge2Learning */,
-				EC2CC7CA2EA11563002AD334 /* Challenge2LearningTests */,
-				EC2CC7D42EA11563002AD334 /* Challenge2LearningUITests */,
+				EC2CC7BD2EA11561002AD334 /* LearningJourney */,
+				EC2CC7CA2EA11563002AD334 /* LearningJourneyTests */,
+				EC2CC7D42EA11563002AD334 /* LearningJourneyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,12 +267,12 @@
 /* Begin PBXTargetDependency section */
 		EC2CC7CD2EA11563002AD334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC2CC7BD2EA11561002AD334 /* Challenge2Learning */;
+			target = EC2CC7BD2EA11561002AD334 /* LearningJourney */;
 			targetProxy = EC2CC7CC2EA11563002AD334 /* PBXContainerItemProxy */;
 		};
 		EC2CC7D72EA11563002AD334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC2CC7BD2EA11561002AD334 /* Challenge2Learning */;
+			target = EC2CC7BD2EA11561002AD334 /* LearningJourney */;
 			targetProxy = EC2CC7D62EA11563002AD334 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -479,7 +479,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge2Learning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Challenge2Learning";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningJourney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearningJourney";
 			};
 			name = Debug;
 		};
@@ -501,7 +501,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge2Learning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Challenge2Learning";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningJourney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearningJourney";
 			};
 			name = Release;
 		};
@@ -548,7 +548,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC2CC7B92EA11561002AD334 /* Build configuration list for PBXProject "Challenge2Learning" */ = {
+		EC2CC7B92EA11561002AD334 /* Build configuration list for PBXProject "LearningJourney" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC2CC7DD2EA11563002AD334 /* Debug */,
@@ -557,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC2CC7DF2EA11563002AD334 /* Build configuration list for PBXNativeTarget "Challenge2Learning" */ = {
+		EC2CC7DF2EA11563002AD334 /* Build configuration list for PBXNativeTarget "LearningJourney" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC2CC7E02EA11563002AD334 /* Debug */,
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC2CC7E22EA11563002AD334 /* Build configuration list for PBXNativeTarget "Challenge2LearningTests" */ = {
+		EC2CC7E22EA11563002AD334 /* Build configuration list for PBXNativeTarget "LearningJourneyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC2CC7E32EA11563002AD334 /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC2CC7E52EA11563002AD334 /* Build configuration list for PBXNativeTarget "Challenge2LearningUITests" */ = {
+		EC2CC7E52EA11563002AD334 /* Build configuration list for PBXNativeTarget "LearningJourneyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC2CC7E62EA11563002AD334 /* Debug */,
