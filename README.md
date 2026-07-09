@@ -1,23 +1,57 @@
-# Learning Journey App
-Learning Tracker is an iOS app that helps users build and maintain consistent learning habits by tracking daily progress and streaks.
+# Learning Tracker
 
-# Overview
-- Users can set a personal learning goal and choose a plan duration — weekly, monthly, or yearly.
-- Each day can be marked as learned (orange) or frozen (blue) to visualize progress and breaks.
-- A local notification is sent to remind users to log in and avoid losing their streak.
-  
-# Technical Highlights
-- Swift & SwiftUI for a native iOS experience
--	SwiftData for local data persistence
-- FSCalendar for daily and weekly progress visualization
-- UNUserNotificationCenter for streak reminder notifications
-- MVVM architecture for structured and maintainable code
+**Build the habit. Protect the streak.**
 
- # App Overview
-![LearningTracker2025](https://github.com/user-attachments/assets/c2fb9225-01cc-4071-a2c6-2be4677caefc)
+Learning Tracker is an iOS app that helps users build consistent learning habits by tracking daily progress and streaks. Set a personal learning goal, pick a plan duration, and log every day — or freeze it when life gets in the way.
 
-# Developer
-- Arwa Alkadi
+<br>
+<img width="1920" height="1080" alt="LearningTracker2025" src="https://github.com/user-attachments/assets/8b51cd02-a926-4879-aa67-d065db8684bd" />
+<br>
 
-# Contact
-@ArwaAlkadi8@gmail.com
+## Features
+
+- **Personal learning goal** with a plan duration: week, month, or year
+- **Daily logging** — mark each day as *learned* (orange) or *frozen* (blue) on a live calendar
+- **Streak tracking** with a grace window, so one busy evening doesn't erase your progress
+- **Freeze days** — a limited budget of guilt-free breaks that pause the streak without breaking it
+- **Streak warning notification** — a reminder before the streak expires
+- **Change goal flow** — start a new goal or restart the same one, resetting progress cleanly
+
+## How It Works
+
+### Streaks with a Grace Window
+A streak doesn't die at midnight. It survives as long as no more than **32 hours** pass between logs — enough slack to log at 9 PM one day and 11 PM the next. Exactly **22 hours** after the last log, the app schedules a single local notification: *"Only 10 hours left to log in and keep your progress going"* — timed so the warning always lands with exactly the grace that remains. Every new log or freeze reschedules it.
+
+### Freeze Days
+Freezes are deliberate, budgeted rest days that scale with the plan:
+
+| Plan | Duration | Freeze budget |
+|---|---|---|
+| Week | 7 days | 2 freezes |
+| Month | 30 days | 8 freezes |
+| Year | 365 days | 96 freezes |
+
+A frozen day counts toward the plan and keeps the streak alive, but only one action (learn or freeze) is allowed per day, and the budget is enforced.
+
+## Architecture
+
+MVVM with SwiftData persistence:
+
+```
+LearningTracker
+├── Model/           # LearningStore (@Model) — goal, plan, streak,
+│                    # log/freeze counters and dates
+├── ViewModel/       # Activity, Calendar, ChangeGoal, Onboarding
+└── View/            # RootView, Onboarding, Activity,
+                     # Calendar, ChangeGoal
+```
+
+The whole learning state lives in a single SwiftData `LearningStore` model — created on first launch and fetched thereafter — so progress persists across launches with no server involved.
+
+## Tech Stack
+
+- Swift · SwiftUI
+- SwiftData for local persistence
+- FSCalendar (SPM) for daily and weekly progress visualization
+- UserNotifications for the streak warning
+- MVVM architecture
