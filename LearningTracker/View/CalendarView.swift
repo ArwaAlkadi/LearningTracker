@@ -49,7 +49,7 @@ struct CalendarView: View {
             .background(Color.black.ignoresSafeArea())
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("All activities")
+                    Text("All Activities")
                 }
             }
             .onAppear {
