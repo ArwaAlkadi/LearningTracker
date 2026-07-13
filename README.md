@@ -7,6 +7,7 @@ Learning Tracker is an iOS app that helps users build consistent learning habits
 <br>
 <img width="1920" height="1080" alt="LearningTracker2025" src="https://github.com/user-attachments/assets/8b51cd02-a926-4879-aa67-d065db8684bd" />
 <br>
+<br>
 
 ## Features
 
@@ -16,6 +17,9 @@ Learning Tracker is an iOS app that helps users build consistent learning habits
 - **Freeze days** — a limited budget of guilt-free breaks that pause the streak without breaking it
 - **Streak warning notification** — a reminder before the streak expires
 - **Change goal flow** — start a new goal or restart the same one, resetting progress cleanly
+<br>
+
+
 
 ## How It Works
 
@@ -33,20 +37,9 @@ Freezes are deliberate, budgeted rest days that scale with the plan:
 
 A frozen day counts toward the plan and keeps the streak alive, but only one action (learn or freeze) is allowed per day, and the budget is enforced.
 
-## Architecture
+<br>
 
-MVVM with SwiftData persistence:
 
-```
-LearningTracker
-├── Model/           # LearningStore (@Model) — goal, plan, streak,
-│                    # log/freeze counters and dates
-├── ViewModel/       # Activity, Calendar, ChangeGoal, Onboarding
-└── View/            # RootView, Onboarding, Activity,
-                     # Calendar, ChangeGoal
-```
-
-The whole learning state lives in a single SwiftData `LearningStore` model — created on first launch and fetched thereafter — so progress persists across launches with no server involved.
 
 ## Tech Stack
 
